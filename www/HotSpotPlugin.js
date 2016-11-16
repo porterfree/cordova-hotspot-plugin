@@ -90,12 +90,14 @@ HotSpotPlugin.prototype = {
 
     /**
      * get the current write settings of the app
-     * @param  {requestWriteSettingsCallback} callback
+     * @param  {
+     
+     WriteSettingsCallback} callback
      *      A callback function which is invoked on success.     *
      * @param  {errorCB} error callback
      *      A callback function to be called when errors occurr
      */
-    requestWriteSettings: function(requestWriteSettingsCallback,errorCB) {
+    requestWriteSettings: function(successCB,errorCB) {
         cordova.exec(
             successCB,
             errorCB,
